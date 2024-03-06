@@ -1,5 +1,5 @@
-import{createElement1, selectedElement} from "../utils/domUtils.js";
-import { setData, getDataStorage } from "../utils/storage.js";
+import{createElement1, selectedElement} from "./domUtils.js";
+import { setData, getDataStorage } from "./storage.js";
 // --responsive input group search
 const searchInput=selectedElement('.input-group input')
 const searchInputGroup=selectedElement('.input-group')
@@ -38,7 +38,7 @@ function cards(data){
     cardImageOverlay.addEventListener('click', async(e)=>{
         console.log(e.target.id);
         await setData(e.target.id)
-        location.replace('/episode/episode.html')
+        location.replace('./episode.html')
     })
     //!
     const cardDescriptionDiv=createElement1('div', ['cardDescription'])

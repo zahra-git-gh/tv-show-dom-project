@@ -1,5 +1,5 @@
-import{createElement1, selectedElement} from "../utils/domUtils.js";
-import { setData, getDataStorage } from "../utils/storage.js";
+import{createElement1, selectedElement} from "./domUtils.js";
+import { setData, getDataStorage } from "./storage.js";
 {/* <div class="col-12 col-md-6 col-lg-3 mt-3">
                     <div class="card" >
                         <img src="https://static.tvmaze.com/uploads/images/medium_landscape/478/1195111.jpg" class="card-img-top" alt="...">

@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lora", serif;
+}
+body{
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(28, 30, 42);
+}
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+    background-color: rgb(28, 30, 42);
+}
+header nav{
+    background-color: rgba(0, 255, 255, 0) !important;
+    
+}
+header nav a{
+    color: white !important;
+}
+header nav  .fa-circle-play{
+    background: -moz-linear-gradient(top, rgb(0, 255, 127)0%, rgba(0, 242, 222, 1) 100%);
+  background: -webkit-linear-gradient(top, rgb(0, 255, 127) 0%, rgba(0, 242, 222, 1) 100%);
+  background: linear-gradient(to bottom, rgb(0, 255, 127) 0%, rgba(0, 242, 222, 1) 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.form-select{
+    width: 250px !important;
+    border-radius: 18px !important;
+    color: white !important;
+    background-color: rgb(52, 52, 60) !important;
+    border-color: rgb(52, 52, 60) !important;
+    outline: none !important;
+}
+.container{
+    width: 63%;
+}
+.form-select:focus{
+    outline: none !important;
+    border: 1px solid rgba(0, 242, 222, 1) !important;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102, 174, 233, 0) !important;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102, 174, 233, 0) !important;
+}
+.inputSelect{
+    display:inline-block;
+    position: absolute;
+    top: 33%;
+    left: 72%;
+    border:0;
+    padding:0;
+    outline:none;
+    background-color: rgb(52, 52, 60);
+    color: white;
+}
+.inputSelect::placeholder{
+    color: white;
+}
+.card{
+    background-color: rgb(52, 52, 60);
+    color: white;
+    /* min-height: 330px !important; */
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    /* position: relative; */
+    min-height: 280px;
+}
+.card a i{
+    color: aqua !important;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+.card .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+.leftNavbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 30%;
+    font-weight: lighter;
+}
+@media (min-width: 320px) {
+    /* navbar responsive */
+    .container{
+        width: 83%;
+    }
+    header nav a{
+        font-size: 15px !important;
+        font-weight: lighter !important;
+    }
+    header nav .form-select{
+        max-width: 80px !important;
+        font-size: 7px !important;
+    }
+    
+    header nav  .fa-circle-play{
+        width: 30px;
+        font-size: x-large !important;
+        
+    }
+    .navbar > .container-fluid{
+        width: 100%;
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap;
+        /* justify-content: center !important; */
+        align-items: center !important;
+    }
+  
+    /* left navbar responsive */
+    .leftNavbar ul{
+        padding-left: 0.5rem;
+    }
+    .leftNavbar{
+        top: 18% !important;
+    }
+    .leftNavbar li a i{
+        font-size: small;
+    }
+    .leftNavbar li{
+        font-size: 8px;
+        font-weight: lighter;
+    }
+    .card{
+        min-height: 200px;
+    }
+    .card h5{
+        font-size: medium;
+    }
+    .summery{
+        top: 60px !important;
+        font-size: 10px !important;
+    }
+    /* search input select */
+    .inputSelect{
+        max-width: 70px !important;
+        top: 33%;
+        left: 45%;
+        font-size: 8px;
+    }
+}
+@media (min-width: 768px) {
+    /* navbar responsive */
+    header nav .form-select{
+        max-width: 100% !important;
+        font-size: 17px !important;
+    }
+    header nav .input-group input::placeholder{
+        font-size: large;
+    }
+    header nav  .fa-circle-play{
+        width: max-content !important;
+        font-size: xx-large !important;
+        margin-top: 0px;
+    }
+    header nav .input-group {
+        margin-right: 20px;
+    }
+    header nav a{
+        font-size: xx-large !important;
+    }
+    
+    /* left navbar responsive */
+    .leftNavbar{
+        top: 30% !important;
+    }
+    .leftNavbar ul{
+        padding-left: 0.5rem;
+    }
+    .leftNavbar li a i{
+        font-size: x-large;
+    }
+    .leftNavbar li{
+        font-size: large;
+        font-weight: lighter;
+    }
+    .card{
+        min-height: 250px;
+    }
+    .card h5{
+        font-size: large;
+    }
+    .summery{
+        top: 85px !important;
+        font-size: small !important;
+    }
+    .inputSelect{
+        max-width: 100% !important;
+        font-size: 17px !important;
+   
+        top: 33%;
+        left: 51%;
+       
+    }
+}
+@media (min-width: 992px){
+    .card h5{
+        font-size: larger;
+    }
+    .inputSelect{
+        display:inline-block;
+        position: absolute;
+        top: 33% !important;
+        left: 72% !important;
+        border:0;
+        padding:0;
+        outline:none;
+        background-color: rgb(52, 52, 60);
+        color: white;
+    }
+}
+@media (min-width: 1680px){
+    .inputSelect{
+        display:inline-block;
+        position: absolute;
+        top: 33% !important;
+        left: 77% !important;
+        border:0;
+        padding:0;
+        outline:none;
+        background-color: rgb(52, 52, 60);
+        color: white;
+    }
+}
+main{
+    max-width: 100vw;
+    min-height: 100vh;
+}
+.leftNavbar li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 27px;
+}
+.leftNavbar li a i{
+    color: white;
+}
+.summery{
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    height: max-content;
+    left: -55px;
+    top: 85px;
+    background-color: rgb(15, 16, 25);
+    z-index: 2;
+    font-size: small;
+    font-weight: lighter;
+    display: none;
+}
+.card-body:hover .summery{
+    display: block;
+}
+.parentOfCardsMovies .row{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    /* flex-wrap: wrap !important; */
+    justify-content: center;
+    position: relative;
+}
+.none{
+    display: none;
+}
+footer{
+    max-width: 100%;
+    min-height: 100px;
+    background-color: rgb(28, 30, 42);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+footer section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+footer section i{
+    font-size: x-large;
+    color: white;
+}

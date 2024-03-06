@@ -1,0 +1,340 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap') */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lora", serif;
+}
+body{
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(28, 30, 42);
+}
+header {
+    width: 100%;
+    position: sticky !important;
+    top: 0px !important;
+    z-index: 57777;
+    background-color: rgb(28, 30, 42);
+}
+header nav{
+    background-color: rgba(0, 255, 255, 0) !important;
+    
+}
+header nav a{
+    color: white !important;
+}
+header nav .input-group button{
+    background-color: rgb(52, 52, 60) !important;
+    border-radius: 25px;
+}
+header nav .input-group input{
+    background-color: rgb(52, 52, 60) !important;
+    border: none !important;
+    outline: none !important;
+    color: white !important;
+    border-radius: 25px;
+}
+header nav  .fa-circle-play{
+    background: -moz-linear-gradient(top, rgb(0, 255, 127)0%, rgba(0, 242, 222, 1) 100%);
+  background: -webkit-linear-gradient(top, rgb(0, 255, 127) 0%, rgba(0, 242, 222, 1) 100%);
+  background: linear-gradient(to bottom, rgb(0, 255, 127) 0%, rgba(0, 242, 222, 1) 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* background-image:linear-gradient(rgba(15, 255, 80, 0.59), rgba(0, 242, 222, 1)) ; */
+header nav .input-group input::placeholder{
+    color: white !important;
+}
+textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=tel].form-control:focus, 
+[contenteditable].form-control:focus {
+  box-shadow: inset 0 -1px 0 #dddddd00;
+}
+.container{
+    width: 63%;
+}
+
+.leftNavbar{
+    /* width: 20%;
+    height: 100%; */
+    /* background-color: aliceblue; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-start;
+    position: fixed;
+    top: 30%;
+    font-weight: lighter;
+}
+@media (min-width: 320px) {
+    /* navbar responsive */
+    .container{
+        width: 83%;
+    }
+    header nav a{
+        font-size: 15px !important;
+        font-weight: lighter !important;
+    }
+    header nav .input-group input{
+        max-width: 80px !important;
+    }
+    header nav .input-group input::placeholder{
+        font-size: small;
+    }
+    header nav .input-group button{
+        font-size: small;
+    }
+    header nav  .fa-circle-play{
+        width: 30px;
+        font-size: x-large !important;
+        margin-top: 5px;
+    }
+    .navbar > .container-fluid{
+        width: 100%;
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap;
+        /* justify-content: center !important; */
+        align-items: center !important;
+    }
+    /* header image responsive */
+    .headerImg{
+        width: 100%;
+        height: 150px !important;
+        /* background-color: pink; */
+        background-image: url(/images/header2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    /* left navbar responsive */
+    .leftNavbar ul{
+        padding-left: 0.5rem;
+    }
+    .leftNavbar{
+        top: 18% !important;
+    }
+    .leftNavbar li a i{
+        font-size: small;
+    }
+    .leftNavbar li{
+        font-size: 8px;
+        font-weight: lighter;
+    }
+    /* like hr responsive */
+    .likeHR p{
+      font-size: small;
+    }
+    /* hover card */
+    .card:hover{
+        width: 150px !important;
+        position: absolute;
+        top: 0px !important;
+        left: 0px !important;
+        border: 15px solid rgb(52, 52, 60);
+      
+    }
+    .cardDescription p{
+        font-size: 10px;
+    }
+}
+@media (min-width: 768px) {
+    /* navbar responsive */
+    header nav .input-group input{
+        max-width: 100% !important;
+    }
+    header nav .input-group input::placeholder{
+        font-size: large;
+    }
+    header nav .input-group button{
+        font-size: large;
+    }
+    header nav  .fa-circle-play{
+        width: max-content !important;
+        font-size: xx-large !important;
+        margin-top: 0px;
+        /* margin-right: 10px; */
+    }
+    header nav .input-group {
+        margin-right: 20px;
+    }
+    header nav a{
+        font-size: xx-large !important;
+    }
+    /* header image responsive */
+    .headerImg{
+        width: 100%;
+        height: 400px !important;
+        /* background-color: pink; */
+        background-image: url(/images/header2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    /* left navbar responsive */
+    .leftNavbar{
+        top: 30% !important;
+    }
+    .leftNavbar ul{
+        padding-left: 0.5rem;
+    }
+    .leftNavbar li a i{
+        font-size: x-large;
+    }
+    .leftNavbar li{
+        font-size: large;
+        font-weight: lighter;
+    }
+    /* like hr responsive */
+    .likeHR p{
+        font-size:large;
+      }
+      .likeHR p{
+        transform: translateY(10%) !important;
+    }
+    .cardDescription p{
+        font-size: 12px !important;
+    }
+}
+@media (min-width: 992px){
+    .cardDescription p{
+        font-size: 15px !important;
+    }
+    .card:hover{
+        width: 185px !important;
+        position: absolute;
+        top: 13px !important;
+        left: 5px !important;
+        border: 15px solid rgb(52, 52, 60) !important;
+      
+    }
+}
+@media (min-width: 1680px){
+    .cardDescription p{
+        font-size: 15px !important;
+    }
+    .card:hover{
+        width: 245px !important;
+        position: absolute;
+        top: 0px !important;
+        left: 0px !important;
+        border: 15px solid rgb(52, 52, 60) !important;
+      
+    }
+}
+main{
+    max-width: 100vw;
+    min-height: 100% !important;
+}
+.leftNavbar li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 27px;
+}
+.leftNavbar li a i{
+    color: white;
+}
+
+.headerImg{
+    width: 100%;
+    height: 400px;
+    /* background-color: pink; */
+    background-image: url(/images/header2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.likeHR{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(52, 52, 60);
+    padding: 5px;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
+   
+}
+.likeHR p{
+    color: white;
+    transform: translateY(25%);
+}
+/* .cardMovie{
+    width: 20%;
+    height: 200px;
+    background-color: aliceblue;
+} */
+.card{
+    position: relative !important;
+    overflow: hidden;
+    transition: all 0.1s;
+}
+
+.card:hover{
+    width: 185px;
+    position: absolute;
+    top: 13px;
+    left: 5px;
+    border: 15px solid rgb(52, 52, 60);
+  
+}
+.card .shadow {
+    position: absolute !important;
+    width: 100% !important;
+    bottom: 0 !important;
+    box-shadow: 0 0 100px 100px rgba(0, 0, 0, 0.586) !important;
+  }
+  .cardDescription{
+    position: absolute;
+    bottom: 10px;
+
+}
+.card{
+    cursor: pointer;
+    position: absolute;
+}
+.parentOfCardsMovies .row{
+    width: 100%;
+    height: max-content;
+    /* height: 1500px; */
+    display: flex;
+    /* flex-wrap: wrap !important; */
+    justify-content: center;
+    position: relative;
+}
+footer{
+    max-width: 100%;
+    min-height: 100px;
+    background-color: rgb(28, 30, 42);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+footer section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+footer section i{
+    font-size: x-large;
+    color: white;
+}

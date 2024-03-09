@@ -64,7 +64,7 @@ function cards(data){
 // testCard.addEventListener('click', (e)=>{
 //     console.log(e.target.id);
 // })
-const nameMovies=['Game of thrones', 'breaking bad', 'dark', 'the nevers', 'sherlock', 'the sopranos', 'planet earth', 'true detective', 'prison break', 'the wire', 'the office', 'friends']
+const nameMovies=['Game of thrones', 'breaking bad', 'dark', 'the nevers', 'sherlock', 'the sopranos', 'planet earth', 'true detective', 'prison break', 'the wire', 'the leftovers', 'friends']
 let index=0
 const getData=setInterval(async() => {
      const res=await fetch(`https://api.tvmaze.com/search/shows?q=${nameMovies[index]}`)
